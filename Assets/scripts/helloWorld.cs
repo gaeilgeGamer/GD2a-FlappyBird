@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class helloWorld : MonoBehaviour
 {
@@ -15,6 +14,6 @@ public class helloWorld : MonoBehaviour
     void Update()
     {
         Debug.Log("Hello World");
-        Debug.Log("Hi there 2d game engines 2b");
+        Debug.Log("Hello World");
     }
 }
