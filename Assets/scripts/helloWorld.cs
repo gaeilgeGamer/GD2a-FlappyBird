@@ -15,5 +15,6 @@ public class helloWorld : MonoBehaviour
     void Update()
     {
         Debug.Log("Hello World");
+        Debug.Log("Hi there 2d game engines 2b");
     }
 }
