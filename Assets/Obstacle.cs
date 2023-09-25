@@ -2,21 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class helloWorld : MonoBehaviour
+public class Obstacle : MonoBehaviour
 {
+    public float speed; 
     // Start is called before the first frame update
-    void Awake(){
-        
-    }
     void Start()
     {
-        Debug.Log("hello world");
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Hello World");
-        Debug.Log("hello world");
+        transform.position += ((Vector3.left * speed) * Time.deltaTime);
     }
 }
