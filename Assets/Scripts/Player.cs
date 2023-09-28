@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public GameManager gameManager;
+    public bool isDead = false; 
     public float velocity = 2.4f; 
     public Rigidbody2D rigidbody;
     public Animator anim;
@@ -18,7 +20,12 @@ public class Player : MonoBehaviour
     void Update()
     {
         if(Input.GetMouseButtonDown(0)){
-        rigidbody.velocity = Vector2.up * velocity;  
-    }
+        rigidbody.velocity = Vector2.up * velocity; 
+        }
+}
+private void OnCollisionEnter2D(Collision2D other) {
+        isDead = true; 
+        gameManager.GameOver(); 
+       
 }
 }
